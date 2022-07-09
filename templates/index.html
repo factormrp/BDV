@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="center prompt">{{ prompt }}</div>
+  <div class="center list">
+    {% for element in list %}
+      <form method="POST" action="/series" class="element">
+        <input type="hidden" name="category" value="{{ element }}">
+        <button type="submit"><span>{{ element }}</span></button>
+      </form>
+    {% endfor %}
+  </div>
+{% endblock %}

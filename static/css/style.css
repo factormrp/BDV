@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: lightyellow;
+  padding: 0;
+}
+
+body {
+  display: block;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.sitelogo {
+  height: 250px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.element {
+  font-size: 1vw;
+}
+
+.prompt {
+  font-size: 2vw;
+}
+
+.list {
+  margin-top: 40px;
+}
+
+.plot {
+  margin-top: 40px;
+}
